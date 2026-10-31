@@ -1,0 +1,19 @@
+general.import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
+
+[font]
+size = 14
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+dimensions = { columns = 133, lines = 40 }
+# decorations = "Buttonless"
+dynamic_padding = true
+
+# [window.padding]
+# x = 7
+# y = 5
