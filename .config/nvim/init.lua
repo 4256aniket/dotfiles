@@ -430,37 +430,7 @@ do
       comments = { italic = false }, -- Disable italics in comments
     },
   }
-  vim.pack.add({
-    "https://github.com/ellisonleao/gruvbox.nvim"
-  })
 
-  require("gruvbox").setup({
-    terminal_colors = true, -- add neovim terminal colors
-    undercurl = true,
-    underline = false,
-    bold = false,
-    italic = {
-      strings = true,
-      emphasis = true,
-      comments = true,
-      operators = false,
-      folds = true,
-    },
-    strikethrough = false,
-    invert_selection = false,
-    invert_signs = false,
-    invert_tabline = false,
-    inverse = true, -- invert background for search, diffs, statuslines and errors
-    contrast = "soft", -- can be "hard", "soft" or empty string
-    palette_overrides = {
-        bright_green = "#ebdbb2",
-    },
-    overrides = {},
-    dim_inactive = false,
-    transparent_mode = false,
-  })
-
-  vim.cmd.colorscheme("gruvbox")
   -- Load the colorscheme here.
   -- Like many other themes, this one has different styles, and you could load
   -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
@@ -1065,6 +1035,8 @@ do
   -- For independent modules, uncomment the convenience loader:
   require 'custom.plugins'
   --
+  vim.o.background="light"
+  vim.cmd.colorscheme("gruvbox")
   -- `custom.plugins` automatically loads files from that directory, but their
   -- order is unspecified. If plugins depend on each other, keep them in the same
   -- file and put their `vim.pack.add()` and `setup()` calls in the required order.

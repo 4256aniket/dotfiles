@@ -1,4 +1,4 @@
-general.import = ["~/.config/alacritty/themes/gruvbox_dark.toml"]
+general.import = ["~/.config/alacritty/themes/gruvbox_light.toml"]
 
 [font]
 size = 14
@@ -11,8 +11,9 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "Buttonless"
+startup_mode = "Maximized" 
 dynamic_padding = true
 
-# [window.padding]
-# x = 7
-# y = 5
+[window.padding]
+x = 7
+y = 5
